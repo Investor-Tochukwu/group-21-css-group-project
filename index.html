@@ -28,20 +28,26 @@
 
 </head>
 <body>
+
+
+
     <header>
 
         <nav>
 
             <div class="logo">
-                <img src="./images/Xperience-travels-logo.png" alt="">
+                <img src="./images/Xperience-travels-logo.png" alt="Xperience-Travels-logo">
             </div>
 
             <ul class="desktopdisplay">
-                <li> <a href="#">HOME</a></li>
+                <li> <a href="#home">HOME</a></li>
                 <li> <a href="#">DESTINATION</a></li>
                 <li> <a href="#">PACKAGES </a></li>
                 <li> <a href="#">ABOUT US</a></li>
-                <li> <a href="#">CONTACT</a></li>
+            </ul>
+
+            <ul class="desktop-contact">
+                 <li> <a href="#">CONTACT</a></li>
             </ul>
 
             <div class="mobiledisplay">
@@ -50,7 +56,7 @@
             
             
                 <ul class="mobiledropdown">
-                <li> <a href="#">HOME</a></li>
+                <li> <a href="#home">HOME</a></li>
                 <li> <a href="#">DESTINATION</a></li>
                 <li> <a href="#">PACKAGES </a></li>
                 <li> <a href="#">ABOUT US</a></li>
@@ -65,11 +71,11 @@
 
     <main>
 
-        <section class="hero">
+        <section id="home" class="hero">
 
             <div class="herotext">
 
-                <div class="herotext-h1">
+                <div class="herotext-display">
                     <h1> X</h1>
                     <h1> P</h1>
                     <h1> E</h1>
@@ -89,9 +95,13 @@
 
         <section class="introduction">
 
-             <div>
+            <div>
+
                 <h2> At Xperience </h2>
                 <p>We create luxury journeys that feel natural and unforgettable. Our approach is simple, thoughtful planning, refined details, and experiences that truly reflect you. Whether it is a quiet escape or a statement getaway, we make every moment feel effortless, personal, and beautifully lived</p>
+
+                <a href="#">Explore Destinations </a>
+
             </div>
 
         </section>
@@ -100,30 +110,41 @@
 
             <h2> Feature Destinations  </h2>
 
+
             <div class="fdcards">
+
                 <div>
                     <img src="./images/asian-woman-wearing-japanese-traditional-kimono-temple-tokyo-japan.webp" alt="asian woman wearing japanese traditional kimono at the temple in Tokyo, Japan">
                     <h3>Tokyo, Japan</h3>
-                    <a href="#">EXPLORE DESTINATION</a>
+                        <a href="#">EXPLORE DESTINATION</a>
                 </div>
 
-                 <div>
+                <div>
                     <img src="./images/Ayun temple Bali Indonesia.webp" alt="Ayun Temple Bali Indonesia">
                     <h3>Bali, Indonesia</h3>
                     <a href="#">EXPLORE DESTINATION</a>
                 </div>
 
-                 <div>
+                <div>
                     <img src="./images/eiffel-tower-flower-garden-paris.webp" alt="Eiffel Tower flower garden in Paris, France.">
                     <h3>Paris, France </h3>
                     <a href="#">EXPLORE DESTINATION</a>
                 </div>
 
+                    
                 <div>
                     <img src="./images/lake in cape town south africa.webp" alt="A lake in Capetown, South Africa">
                     <h3>Cape Town, South Africa </h3>
                     <a href="#">EXPLORE DESTINATION</a>
                 </div>
+
+
+            </div>
+
+            <div class="view-destinations-link">
+
+                <a href="#"> View Destinations </a>
+
             </div>
 
         </section>  
@@ -132,103 +153,120 @@
 
             <h2>Why Choose Us </h2>
 
-            <div class="why-choose-us-content">
+            <div class="why-choose-us-container"> 
 
-                <div>
-                    <div class="icon">
-                        <span class="material-symbols-outlined">
-                        volunteer_activism
-                        </span>
+                <div class="why-choose-us-grid">
+
+                    <div>
+                        <div class="icon">
+                            <span class="material-symbols-outlined">
+                            volunteer_activism
+                            </span>
+                        </div>
+
+                        <h3>Exclusively Yours </h3>
+                        <p>Every journey begins with you. Your preferences, your rhythm, your desires. Nothing is templated, everything is thoughtfully tailored to reflect your lifestyle.</p>
                     </div>
 
-                    <h3>Exclusively Yours </h3>
-                    <p>Every journey begins with you. Your preferences, your rhythm, your desires. Nothing is templated, everything is thoughtfully tailored to reflect your lifestyle.</p>
-                </div>
+                    <div>
+                        <div class="icon">
+                            <span class="material-symbols-outlined">
+                            arrows_outward
+                            </span>
+                        </div>
 
-                <div>
-                    <div class="icon">
-                        <span class="material-symbols-outlined">
-                        arrows_outward
-                        </span>
+                        <h3>Seamless from Start to Finish </h3>
+                        <p>We handle every detail with quiet precision. From the first idea to your return home, your experience flows effortlessly, refined, smooth, and completely stress free.</p>
                     </div>
 
-                    <h3>Seamless from Start to Finish </h3>
-                    <p>We handle every detail with quiet precision. From the first idea to your return home, your experience flows effortlessly, refined, smooth, and completely stress free.</p>
-                </div>
+                    <div>
+                        <div class="icon">
+                            <span class="material-symbols-outlined">
+                            hub
+                            </span>
+                        </div>
 
-                <div>
-                    <div class="icon">
-                        <span class="material-symbols-outlined">
-                        hub
-                        </span>
+                        <h3> Curated Access </h3>
+                        <p>We go beyond bookings. Think handpicked stays, hidden gems, and experiences you would not easily find on your own, all carefully selected to match your taste.</p>
                     </div>
 
-                    <h3> Curated Access </h3>
-                    <p>We go beyond bookings. Think handpicked stays, hidden gems, and experiences you would not easily find on your own, all carefully selected to match your taste.</p>
-                </div>
+                    <div>
+                        <div class="icon">
+                            <span class="material-symbols-outlined">
+                            shield_with_heart
+                            </span>
+                        </div>
 
-                <div>
-                    <div class="icon">
-                        <span class="material-symbols-outlined">
-                        shield_with_heart
-                        </span>
+                        <h3>Discreet, Personal Service</h3>
+                        <p>We value privacy, attention, and genuine care. You are not just a client, you are known, understood, and looked after with intention at every step.</p>
                     </div>
 
-                    <h3>Discreet, Personal Service</h3>
-                    <p>We value privacy, attention, and genuine care. You are not just a client, you are known, understood, and looked after with intention at every step.</p>
                 </div>
 
             </div>
 
 
         </section>
-
 
         <section class="testimonial">
 
+            
             <div class="t-title">
-                <h2>Trusted by Travelers</h2>
+                <h2> Trusted by Travelers </h2>
             </div>
 
-            <div class="tcontent">
-                <div>
-                    <img src="./images/close-up-portrait-young-african-man-with-stubble (1).jpg" alt="An image of a satisfied traveler">
-                    <p>“I didn’t have to think about anything. Everything was planned so smoothly and it just felt easy from start to finish. I have never travelled like that before.”</p>
-                    <h3>Tunde Ayo</h3>
+            <div class="testimonial-container">
+
+                <div class="tgrid">
+
+
+                    <div>
+                        <img src="./images/close-up-portrait-young-african-man-with-stubble (1).jpg" alt="An image of a satisfied traveler">
+                        <p>“I didn’t have to think about anything. Everything was planned so smoothly and it just felt easy from start to finish. I have never travelled like that before.”</p>
+                        <h3>Tunde Ayo</h3>
+                    </div>
+
+                    <div>
+                        <img src="./images/front-view-confident-woman (1).jpg" alt="An image of a satisfied traveler">
+                        <p>“What I loved most was how personal everything felt. It wasn’t just a trip, it felt like it was designed around me. Every detail made sense.”</p>
+                        <h3>Jasmine Carter </h3>
+                    </div>
+
+                    <div>
+                        <img src="./images/smiling-african-american-girl-brown-tshirt (1).jpg" alt="An image of a satisfied traveler">
+                        <p>“From the hotel to the experiences, everything was exactly my taste. You can tell they really listen. It felt quiet, refined, and worth every moment.”</p>
+                        <h3>Charlotte Bennett </h3>
+                    </div>
+
+                    
                 </div>
 
-                <div>
-                    <img src="./images/front-view-confident-woman (1).jpg" alt="An image of a satisfied traveler">
-                    <p>“What I loved most was how personal everything felt. It wasn’t just a trip, it felt like it was designed around me. Every detail made sense.”</p>
-                    <h3>Jasmine Carter </h3>
-                </div>
-
-                <div>
-                    <img src="./images/smiling-african-american-girl-brown-tshirt (1).jpg" alt="An image of a satisfied traveler">
-                    <p>“From the hotel to the experiences, everything was exactly my taste. You can tell they really listen. It felt quiet, refined, and worth every moment.”</p>
-                    <h3>Charlotte Bennett </h3>
-                </div>
-
-                
             </div>
 
             <div class="overlay"></div>
+
+
         </section>
      
+
     </main>
 
     <footer>
+
         <div class="flogo">
             <img src="./images/Xperience-travels-logo.png" alt="Xperience TRavels Logo">
         </div>
 
+
         <div class="footerlinks">
+
 
             <div class="quicklinks">
                 <div><a href="#">Home</a></div>
-                <div><a href="./destination.html">Destinations</a></div>
+                <div><a href="#">Destinations</a></div>
                 <div><a href="#">Contact</a></div>
             </div>
+
 
             <div class="sociallinks">
                 <div>
@@ -236,9 +274,11 @@
                 </div>
 
                 <div>
-                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    
+                    <a href="https://www.x.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
 
                 <div>
@@ -246,10 +286,13 @@
                         2026. All rights reserved
                     </p>
                 </div>
+
             </div>
+
         </div>
         
     </footer>
+
 
 
 
