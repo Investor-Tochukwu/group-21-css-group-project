@@ -1,0 +1,695 @@
+/* UNIVERSAL DESIGN */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: black;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style-type: none;
+    color: white;
+}
+
+h1, h2, h3, a, li {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    color: white;
+}
+
+span {
+    display: inline-block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 4rem;
+}
+
+
+/* HEADER SECTION */
+header {
+    width: 100%;
+    height: 4rem;
+    background-color:rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktopdisplay {
+    display: none;
+}
+
+.desktop-contact {
+    display:none;
+}
+
+nav .logo {
+    width: 200px;
+    height: 100%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; 
+    padding-left: 1.5rem;
+
+}
+
+.logo img  {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;  
+}
+
+.mobiledisplay {
+    height: 100%;
+    display: flex;
+}
+
+.mobiledisplay button {
+    padding-right: 1.5rem;
+    font-size: large;
+    color:#daa520;
+    background-color:transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.mobiledropdown {
+    width: 40%;
+    max-width: 12rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-height: calc(60vh - 4rem);
+    background-color:rgba(0, 0, 0, 0.7);
+    padding: 2rem  1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    border-bottom-left-radius: 7px;
+}
+
+.mobiledropdown a {
+    color:#daa520;
+    font-weight: 600;
+    font-size: 0.7rem;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.mobiledropdown a:hover {
+    color: white;
+    transform: scale(1.04);
+}
+
+.mobiledropdown li:nth-child(6) a {
+    background: linear-gradient(to left, #daa520, #e2c886, #daa520);
+    color: black;
+    font-weight: 800;
+    border-radius: 5px;
+    align-self: center;
+    padding: 6px 2px;
+}
+
+.mobiledropdown li:nth-child(6) a:hover {
+    transform: translateX(3px);   
+}
+
+.mobiledropdown {
+   display: none;
+}
+
+.mobiledisplay:hover .mobiledropdown {
+    display: flex;
+}
+
+.mobiledisplay:hover button {
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* ABOUT HERO */
+.hero {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(./images/african-american-man-woman-solving-freelance-tasks-home.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 3;
+    opacity: 0.9;
+    letter-spacing: 5px;
+}
+
+
+
+
+/* HISTORY SECTION */
+
+.history {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.5rem;
+}
+
+.history h2 {
+    font-weight: 900;
+    height: 0.89em;
+    overflow: hidden;
+    color: #daa520;
+    transition: all 0.2s ease-in-out;
+}
+
+.history h2:hover {
+    font-weight: 900;
+    height: 1em;
+    overflow: hidden;
+    color: #daa520;
+}
+
+.history-grid article {
+    width: 100%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.history-grid article  p {
+    opacity: 0.8;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+
+.history-grid {
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-rows: 400px 300px;
+    gap: 2rem;
+}
+
+.history-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+
+}
+
+
+
+
+/* WHY TRAVEL SECTION */
+.why-travel {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.5rem;
+    gap: 2.5rem;
+}
+
+
+.why-travel h2 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    height: 0.89em;
+    overflow: hidden;
+    color: #daa520;
+    transition: all 0.2s ease-in-out;
+}
+
+.why-travel h2:hover {
+    font-weight: 900;
+    height: 1em;
+    overflow: hidden;
+    color: #daa520;
+}
+
+.why-travel-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 670px 300px;
+    gap: 2rem;
+}
+
+.why-travel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+}
+
+.why-travel-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.why-travel-content .expertise,
+.why-travel-content .core-values {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    text-align: justify;
+}
+
+.why-travel-content h3 {
+    opacity: 0.9;
+    text-align: center;
+
+}
+
+.why-travel-content ul {
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+
+
+/* TEAM SECTION */
+
+.team {
+    width: 55%;
+    margin: 0 auto;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    gap: 2.5rem;
+}
+
+
+.team h2 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    height: 0.89em;
+    overflow: hidden;
+    color: #daa520;
+    transition: all 0.2s ease-in-out;
+}
+
+.team h2:hover {
+    font-weight: 900;
+    height: 1em;
+    overflow: hidden;
+    color: #daa520;
+}
+
+.team-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-content {
+    max-width: 250px;
+    padding: 0.5rem 1rem;
+    background-color: #daa520;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.team-content h3, .team-content p {
+    color: black;
+    text-align: center;
+}
+
+.team-content p {
+   font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+@media (min-width:768px) {
+
+    /* HEADER SECTION */
+    .desktopdisplay {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .mobiledisplay {
+        display: none;
+    }
+
+    .desktopdisplay a {
+    font-weight: 600;
+    align-self: center;
+    font-size: small;
+    transition: all 0.2s ease-in-out;
+    }
+
+    .desktopdisplay a:hover {
+    color:#daa520;
+    transform: scale(1.08);
+    }
+
+    .desktop-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 2rem;
+    }
+
+    .desktop-contact a {
+    color: black;
+    font-weight: 800;
+    align-self: center;
+    font-size: small;  
+    background: linear-gradient(to left, #daa520, #e2c886, #daa520);
+    align-items: center;
+    padding: 0.3rem;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+    }
+
+
+    .desktop-contact a:hover {
+    color: rgb(94, 2, 2);
+    transform: scale(1.1);
+    }
+
+
+
+
+    /* HERO SECTION */
+    
+    .hero {
+        min-height: 70vh;
+    }
+
+
+    
+    
+    /* HISTORY SECTION */
+    
+.history {
+    width: 80%;
+    padding-top: 5rem;
+    min-height: 30vh;
+}
+
+.history h2 {
+    Font-size: 1.8rem;
+}
+
+
+.history-grid article  p {
+    font-size: 1.1rem;
+}
+
+
+.history-grid {
+    padding-top: 3rem;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+
+.history-grid img {
+  width: 300px;
+  height: 450px;
+}
+
+
+
+
+/* WHY TRAVEL SECTION */
+.why-travel {
+    min-height: 70vh;
+    padding-top: 5rem;
+    gap: 3.5rem;
+}
+
+
+.why-travel h2 {
+   font-size: 1.8rem;
+}
+
+.why-travel-grid {
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 1fr;
+}
+
+.why-travel-content {
+    gap: 2rem;
+}
+
+.why-travel-content h3 {
+    font-size: 1.3rem;
+}
+
+.why-travel-content ul {
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+
+
+
+/* TEAM SECTION */
+
+.team {
+    width: 80%;
+    padding-top: 5rem;
+    gap: 3rem;
+}
+
+
+.team h2 {
+    font-size: 1.8rem;
+}
+
+.team-grid {
+    max-width: 600px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 2rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1024px) {
+
+    /* HEADER SECTION */
+    .desktopdisplay a {
+        font-size: 0.9rem;
+    }
+
+    .desktopdisplay {
+        gap: 2rem;
+    }
+
+    .desktop-contact {
+        padding-right: 2.5rem;
+    }
+
+
+
+
+
+    
+    /* HISTORY SECTION */
+
+    
+.history {
+    padding-top: 7rem;
+    width: 75%;
+    padding-top: 5rem;
+}
+
+.history h2 {
+    Font-size: 1.9rem;
+}
+
+
+.history-grid article  p {
+    font-size: 1.2rem;
+}
+
+
+.history-grid {
+    grid-template-columns: 1fr 300px;
+}
+
+.history-grid img {
+  width: 300px;
+  height: 350px;
+}
+
+
+
+/* WHY TRAVEL SECTION */
+.why-travel {
+    width: 75%;
+    padding-top: 7rem;
+    gap: 4rem;
+}
+
+
+.why-travel h2 {
+   font-size: 1.9rem;
+}
+
+
+.why-travel-content h3 {
+    font-size: 1.4rem;
+}
+
+.why-travel-content ul {
+    font-size: 1.2rem;
+}
+
+
+
+
+/* TEAM SECTION */
+
+.team {
+    padding-top: 7rem;
+    gap: 3.5rem;
+}
+
+
+.team h2 {
+    font-size: 1.9rem;
+}
+
+.team-grid {
+    max-width: 1000px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+}
+
+.team-grid img {
+    border-bottom-right-radius: 1px;
+}
+
+.team-content {
+width: 100%;
+max-width: none;
+}
+
+}
+
