@@ -297,7 +297,7 @@ nav .logo {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 670px 300px;
+    grid-template-rows: 630px 300px;
     gap: 2rem;
 }
 
@@ -348,9 +348,9 @@ nav .logo {
 /* TEAM SECTION */
 
 .team {
-    width: 55%;
+    width: 100%;
     margin: 0 auto;
-    min-height: 60vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -379,28 +379,34 @@ nav .logo {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-rows: repeat(4, auto);
+    gap: 1.5rem;
 }
 
 .team-member img {
-    width: 100%;
-    max-width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     object-fit: cover;
     object-position: center;
     border-top-left-radius: 12px;
-    border-bottom-right-radius: 12px;
 }
 
 .team-member {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+
+}
+
+.team-member:hover {
+   transform: scale(1.08);
 }
 
 .team-content {
-    max-width: 250px;
+    width: 200px;
     padding: 0.5rem 1rem;
     background-color: #daa520;
     border-bottom-left-radius: 12px;
@@ -416,7 +422,305 @@ nav .logo {
    font-size: 0.9rem;
 }
 
+.team-content h3 {
+   font-size: 1rem;
+}
 
+
+
+
+
+
+/* IMPACT SECTION */
+
+.impact-grid span {
+    font-weight: 600;
+    color:black;
+    font-size: 2rem;
+}
+
+
+.impact {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.5rem;
+    gap: 2.5rem;
+}
+
+
+.impact h2 {
+    font-weight: 900;
+    height: 0.89em;
+    overflow: hidden;
+    color: #daa520;
+    transition: all 0.2s ease-in-out;
+}
+
+.impact h2:hover {
+    font-weight: 900;
+    height: 1em;
+    overflow: hidden;
+    color: #daa520;
+}
+
+.impact-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.impact-container {
+    width: 70%;
+    max-width: 350px;
+}
+
+.impact-grid > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #daa520;
+    border-radius: 12px;
+    border: 3px solid #daa520;
+    transition: all 0.2s ease-in-out;
+}
+
+.impact-grid h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.impact-grid > div:hover {
+   transform: scale(1.08);
+   background-color: black;
+}
+
+.impact-grid > div:hover h3,
+.impact-grid > div:hover span {
+  color:#daa520;
+}
+
+
+
+
+
+
+/* AWARDS SECTION */
+.awards-grid span {
+    font-weight: 500;
+    color: rgb(1, 58, 1);
+    font-size: 2rem;
+}
+
+
+.awards {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 2.5rem;
+    background-color: rgb(150, 149, 149);
+    margin-top: 3rem;
+}
+
+
+.awards h2 {
+    font-weight: 900;
+    height: 0.89em;
+    overflow: hidden;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.awards h2:hover {
+    font-weight: 900;
+    height: 1em;
+    overflow: hidden;
+    color: black;
+}
+
+
+.awards-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.awards-container {
+    width: 60%;
+    max-width: 250px;
+    margin: 0 auto;
+
+}
+
+.awards-grid > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.7rem 1.5rem;
+    transition: all 0.2s ease-in-out;
+    border: 3px solid black;
+    border-radius: 12px;
+}
+
+.awards-grid h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    opacity: 0.9;
+    text-align: center;
+    color: black;
+}
+
+.awards-grid > div:hover {
+   transform: scale(1.08);
+   background-color: black;
+   border: 3px solid black;
+   border-radius: 12px;
+}
+
+.awards-grid > div:hover h3,
+.awards-grid > div:hover span {
+  color:#daa520;
+}
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 40vh;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.flogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    min-height: auto;
+    align-items: center;
+}
+
+.flogo img {
+    width: 150px;
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: auto;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.quicklinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    min-height: auto;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.quicklinks div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: auto;
+    background: linear-gradient(to left, #daa520, #e2c886, #daa520);
+    align-items: center;
+    padding: 0.3rem;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.quicklinks div > a {
+    
+    color: black;
+    font-weight: 800;
+    align-self: center;
+    font-size: 0.8rem;
+}
+
+.quicklinks div:hover {
+    transform: translateX(10px);
+}
+
+.quicklinks div:hover a {
+    color: rgb(94, 2, 2);
+    transform: scale(1.1);
+    
+}
+
+.sociallinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    min-height: auto;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    gap: 0.5rem;
+}
+
+.sociallinks a {
+   color: #daa520;
+   font-size: 20px;
+   opacity: 0.9;
+}
+
+.sociallinks div > h3 {
+   opacity: 0.9; 
+   font-size: 1rem;
+}
+
+.sociallinks a:hover {
+   transform: scale(1.1);
+   color: white;
+    opacity: 0.9; 
+}
+
+
+footer p {
+    font-size: xx-small;
+}
 
 
 
@@ -489,96 +793,215 @@ nav .logo {
     
     /* HISTORY SECTION */
     
-.history {
+    .history {
     width: 80%;
     padding-top: 5rem;
     min-height: 30vh;
-}
+    }
 
-.history h2 {
+    .history h2 {
     Font-size: 1.8rem;
-}
+    }
 
 
-.history-grid article  p {
+    .history-grid article  p {
     font-size: 1.1rem;
-}
+    }
 
 
-.history-grid {
+    .history-grid {
     padding-top: 3rem;
     grid-template-columns: 1fr 300px;
     grid-template-rows: 1fr;
     height: 100%;
-}
+    }
 
-.history-grid img {
+    .history-grid img {
   width: 300px;
   height: 450px;
-}
+    }
 
 
 
 
-/* WHY TRAVEL SECTION */
-.why-travel {
+    /* WHY TRAVEL SECTION */
+    .why-travel {
     min-height: 70vh;
     padding-top: 5rem;
     gap: 3.5rem;
-}
+    }
 
 
-.why-travel h2 {
+    .why-travel h2 {
    font-size: 1.8rem;
-}
+    }
 
-.why-travel-grid {
+    .why-travel-grid {
     grid-template-columns: 1fr 300px;
     grid-template-rows: 1fr;
-}
+    }
 
-.why-travel-content {
+    .why-travel-content {
     gap: 2rem;
-}
+    }
 
-.why-travel-content h3 {
+    .why-travel-content h3 {
     font-size: 1.3rem;
-}
+    }
 
-.why-travel-content ul {
+    .why-travel-content ul {
     opacity: 0.9;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     line-height: 1.5;
     font-size: 1.1rem;
-}
+    }
 
 
 
 
-/* TEAM SECTION */
+    /* TEAM SECTION */
 
-.team {
+    .team {
     width: 80%;
     padding-top: 5rem;
     gap: 3rem;
-}
+    }
 
 
-.team h2 {
+    .team h2 {
     font-size: 1.8rem;
-}
+    }
 
-.team-grid {
-    max-width: 600px;
+    .team-grid {
+    max-width: 500px;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 1rem;
+    column-gap: 1.5rem;
     row-gap: 2rem;
+    }
+    .team-member {
+    max-height: none;
+    }
+    
+  
+
+
+
+
+
+    /* IMPACT SECTION */
+
+
+    .impact {
+    min-height: 30vh;
+    padding-top: 5rem;
+    }
+
+
+    .impact h2 {
+   font-size: 1.8rem;
+    }
+
+
+    .impact-grid {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    }
+
+    .impact-container {
+    max-width: 500px;
+    }
+
+    .impact-grid > div {
+    align-items: center;
+    justify-content: center;
+    }
+
+    .impact-grid h3 {
+    font-size: 1rem;
+    text-align: center;
+    }
+
+    
+    /* AWARDS SECTION */
+
+
+.awards {
+    padding: 5rem 0;
+    gap: 3.5rem;
 }
 
+
+.awards h2 {
+   font-size: 1.8rem;
 }
+
+
+.awards-grid {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+}
+
+.awards-container {
+    width: 70%;
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+.awards-grid > div {
+    gap: 1rem;
+}
+
+.awards-grid h3 {
+    font-size: 1rem;
+}
+
+
+
+    /* FOOTER */
+    footer {
+    gap: 1.2rem;
+    padding: 1.5rem 0;
+    }
+
+    .flogo img {
+    width: 150px;
+    }
+
+    .footerlinks {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 90%;
+
+    }
+
+    .quicklinks {
+    width: 35%;
+    min-height: auto;
+    align-items: center;
+    gap: 0.7rem;
+    padding-right: 1rem;
+    }
+
+    .sociallinks {
+    max-width: 35%;
+    align-items: center;
+    gap: 0.7rem;
+    border-left: 2px solid #daa520;
+    }
+
+}
+
+
 
 
 
@@ -668,6 +1091,7 @@ nav .logo {
 .team {
     padding-top: 7rem;
     gap: 3.5rem;
+    min-height: 40vh;
 }
 
 
@@ -691,5 +1115,74 @@ width: 100%;
 max-width: none;
 }
 
+
+
+
+/* IMPACT SECTION */
+
+.impact {
+    min-height: 40vh;
+    padding-top: 7rem;
+    gap: 3.5rem;
 }
 
+
+.impact h2 {
+   font-size: 1.9rem;
+}
+
+
+.impact-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+}
+
+.impact-container {
+  max-width: 800px;
+}
+
+.impact-grid h3 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+.awards {
+    padding: 7rem 0;
+    gap: 4rem;
+}
+
+
+.awards h2 {
+   font-size: 1.9rem;
+}
+
+
+.awards-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.7rem;
+}
+
+.awards-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.awards-grid > div {
+    gap: 0.5rem;
+}
+
+.awards-grid h3 {
+    font-size: 0.9rem;
+}
+
+
+
+}
