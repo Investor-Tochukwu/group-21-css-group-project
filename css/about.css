@@ -172,7 +172,7 @@ nav .logo {
 .hero {
     width: 100%;
     min-height: 60vh;
-    background-image: url(./images/african-american-man-woman-solving-freelance-tasks-home.jpg);
+    background-image: url(/images/african-american-man-woman-solving-freelance-tasks-home.jpg);
     background-position: center;
     background-size: cover;
     display: flex;

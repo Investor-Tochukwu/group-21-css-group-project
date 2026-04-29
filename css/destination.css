@@ -175,7 +175,7 @@ nav .logo {
     width: 100%;
     height: calc(100vh - 4rem);
     margin-bottom: 1rem;
-    background-image: url(./images/group\ of\ people\ viewing\ a\ paper.jpg);
+    background-image: url(/images/group\ of\ people\ viewing\ a\ paper.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
