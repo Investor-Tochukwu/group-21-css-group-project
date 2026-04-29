@@ -1,36 +1,46 @@
+/* UNIVERSAL DESIGN */
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+    box-sizing: border-box;
+    
 }
 
 body{
     background-color: black;
-    
-}
-h1, h2, h3{
-    color: white;
-    font-family: "Montserrat", sans-serif;
 }
 
-p{
-    color: white;
-    font-family: "Leto", sans-serif;
-}
-
-
-a{
+a {
     display: inline-block;
-    color: white;
     text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h1, h2, h3, a {
+    color: white;
     font-family: "Montserrat", sans-serif;
 }
 
-ul li{
-    list-style: none;
+p {
+    font-family: "Lato", sans-serif;
+    color: white;
 }
 
+span {
+    display: inline-block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 4rem;
+}
 
 /* HEADER SECTION */
 header {
@@ -53,25 +63,8 @@ nav {
     align-items: center;
 }
 
-.desktop{
+.desktopdisplay {
     display: none;
-    width: 100%;
-    gap: 2rem;
-    /* align-items: center; */
-    justify-content: center;
-}
-
-.desktop a {
-    font-size: 0.9rem;
-    font-weight: 600;
-    align-self: center;
-    font-size: small;
-    transition: all 0.5s ease-in-out;
-}
-
-.desktop a:hover {
-    color:#daa520;
-    transform: scale(1.1);
 }
 
 .desktop-contact {
@@ -99,7 +92,6 @@ nav .logo {
 .mobiledisplay {
     height: 100%;
     display: flex;
-    
 }
 
 .mobiledisplay button {
@@ -127,7 +119,6 @@ nav .logo {
     gap: 0.5rem;
     text-align: center;
     border-bottom-left-radius: 7px;
-    z-index: 20;
 }
 
 .mobiledropdown a {
@@ -150,7 +141,6 @@ nav .logo {
     border-radius: 5px;
     align-self: center;
     padding: 6px 2px;
-    transition: transform 1s ease-in-out;
 }
 
 .mobiledropdown li:nth-child(6) a:hover {
@@ -169,157 +159,128 @@ nav .logo {
     color: white;
 }
 
+/* PACKAGE */
 
-/* The Hero Section */
-.hero{
-    width: 100%;
-    height: 70vh;
-    margin-bottom: 1rem;
-    background-image: url(/images/group\ of\ people\ viewing\ a\ paper.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* position: relative; */
-    
-}
-.hero-text{
-    position: relative;
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.8rem;
-    
-    
-}
-
-.hero-text h1{
-    color: #f1f1f1;
-    z-index: 10;
-}
-.hero-text p{
-    font-size: 1.2rem;
-    text-align: center;
-    z-index: 10;
-}
-
-.hero-text a{
-    padding: 1rem 0.6rem;
-    border-radius: 30px;
-    background-color: #f1f1f1;
-    color: black;
-    font-weight: 600;
-    font-size: 1rem;
-    z-index: 10;
-}
-
-.hero .overlay{
-     position: absolute;
-     top: 0;
-     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    /* z-index: 2; */
-}
-.hero img{
-    width: 200px;
-    bottom: 10px;
-    right: 0;
-    position: absolute;
-    border-radius: 10px;
-    z-index: 2;
-    
-}
-
-/* DESTINATION SECTION */
-
-.destinations{
-    width: 100%;
-    margin: 2rem auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    gap: 3.5rem;
-    padding-top: 3.5rem ;
-
-}
-.destinations h2{
-    font-weight: 900;
-    height: 0.89em;
-    text-align: center;
-    overflow: hidden;
-    color: #daa520;
-    transition: all 0.2s ease-in-out;
-}
-.destinations h2:hover {
-    font-weight: 900;
-    height: 1em;
-    overflow: hidden;
-    color: #daa520;
-}
-
-.destinations-content{
-    width: 90%;
-    margin: 0rem auto;
+.package-container {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
-
-
-
-article{
-    background: #111;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
-}
-.destinations-content article:hover{
-    transform: scale(1.03);
-    box-shadow: 0 10px 25px rgba(77, 66, 66, 0.7);
-}
-
-
-article img{
+    grid-template-rows: 6rem 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
     width: 100%;
-    height:220px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 5px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
 }
 
-.dest-content{
+.package-container > h2 {
+    text-align: center;
+} 
+
+.package {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem ;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
-.dest-content span{
-    display: inline-block;
-    color: #daa520;
+.package-tier {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 30rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    border-radius: 20px;
+    font-weight: 700;
+    box-shadow: 3px 3px 5px rgba(218, 165, 32, 0.5);
+    transition: all .3s ease-in-out;
+    z-index: 10;
+}
+
+.package-tier-image-1 {
+    background-image: url(/images/budget\ package.png);
+}
+
+.package-tier-image-2 {
+    background-image: url(/images/standard\ package.png);
+}
+
+.package-tier-image-3 {
+    background-image: url(/images/premuim\ package.png);
+}
+
+.package-tier-image-4 {
+    background-image: url(/images/luxury\ package.png);
+}
+
+.package-tier > h3 {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.package-tier h3,
+.package-tier p,
+.package-tier ul,
+.package-tier a {
+    z-index: 10;
+}
+
+.package-tier li {
+    color: white;
+}
+
+.package-tier li span {
+    margin: 0 0.5rem;
+}
+
+.package-tier a {
+    align-self: center;
+    background-color: rgb(218, 165, 32);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    color: black;
+    transition: all .3s ease-in-out;
+    font-weight: 800;
+}
+
+.package-tier a:hover {
+    filter: contrast(1.5);
+    transform: scale(1.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(71, 71, 71, 0.6);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.highlight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10rem;
+    height: 4rem;
+    z-index: 10;
+}
+
+.highlight p {
+    background-color: rgb(179, 144, 57);
+    color: black;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
     font-weight: 600;
 }
-.dest-content button{
-    align-self: self-start;
-    padding: 0.8rem;
-    border-radius: 15px;
-}
-
-
-
-
-
-
-
 
 
 
@@ -346,7 +307,6 @@ footer {
 
 .flogo img {
     width: 150px;
-    height: auto;
 }
 
 .footerlinks {
@@ -436,9 +396,10 @@ footer p {
 }
 
 
-@media(min-width:768px){
-        /* HEADER SECTION */
-    .desktop {
+@media (min-width:768px) {
+
+    /* HEADER SECTION */
+    .desktopdisplay {
         display: flex;
         flex-direction: row;
         gap: 1rem;
@@ -451,14 +412,14 @@ footer p {
         display: none;
     }
 
-    .desktop a {
+    .desktopdisplay a {
     font-weight: 600;
     align-self: center;
     font-size: small;
     transition: all 0.2s ease-in-out;
     }
 
-    .desktop a:hover {
+    .desktopdisplay a:hover {
     color:#daa520;
     transform: scale(1.08);
     }
@@ -488,16 +449,6 @@ footer p {
     transform: scale(1.1);
     }
 
-
-    /* DESTINATION SECTION */
-    .destinations-content{
-        width: 90%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-    }
-
-
-    
     /* FOOTER */
     footer {
     gap: 1.2rem;
@@ -533,13 +484,14 @@ footer p {
     }
 }
 
-@media(min-width:1024px){
-      /* HEADER SECTION */
-    .desktop a {
+@media (min-width:1024px) {
+
+    /* HEADER SECTION */
+    .desktopdisplay a {
         font-size: 0.9rem;
     }
 
-    .desktop {
+    .desktopdisplay {
         gap: 2rem;
     }
 
@@ -547,9 +499,19 @@ footer p {
         padding-right: 2.5rem;
     }
 
-    /* DESTINATION SECTION */
-    .destinations-content{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+    /* PACKAGE */
+
+    .package {
+        display: flex;
+        flex-direction: row;
+        margin: 2rem 3rem;
+    }
+
+    .package-tier {
+        padding: 0.5rem 1rem;
+    }
+
+    .package-tier:hover {
+        transform: scale(1.1);
     }
 }
