@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: black;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h1, h2, h3, a {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    color: white;
+}
+
+span {
+    display: inline-block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 4rem;
+}
+
+
+
+
+
+
+/* HEADER SECTION */
+header {
+    width: 100%;
+    height: 4rem;
+    background-color:rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktopdisplay {
+    display: none;
+}
+
+.desktop-contact {
+    display:none;
+}
+
+nav .logo {
+    width: 200px;
+    height: 100%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; 
+    padding-left: 1.5rem;
+
+}
+
+.logo img  {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;  
+}
+
+.mobiledisplay {
+    height: 100%;
+    display: flex;
+}
+
+.mobiledisplay button {
+    padding-right: 1.5rem;
+    font-size: large;
+    color:#daa520;
+    background-color:transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.mobiledropdown {
+    width: 40%;
+    max-width: 12rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-height: calc(60vh - 4rem);
+    background-color:rgba(0, 0, 0, 0.7);
+    padding: 2rem  1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    border-bottom-left-radius: 7px;
+}
+
+.mobiledropdown a {
+    color:#daa520;
+    font-weight: 600;
+    font-size: 0.7rem;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.mobiledropdown a:hover {
+    color: white;
+    transform: scale(1.04);
+}
+
+.mobiledropdown li:nth-child(6) a {
+    background: linear-gradient(to left, #daa520, #e2c886, #daa520);
+    color: black;
+    font-weight: 800;
+    border-radius: 5px;
+    align-self: center;
+    padding: 6px 2px;
+}
+
+.mobiledropdown li:nth-child(6) a:hover {
+    transform: translateX(3px);   
+}
+
+.mobiledropdown {
+   display: none;
+}
+
+.mobiledisplay:hover .mobiledropdown {
+    display: flex;
+}
+
+.mobiledisplay:hover button {
+    color: white;
+}
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 40vh;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.flogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    min-height: auto;
+    align-items: center;
+}
+
+.flogo img {
+    width: 150px;
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: auto;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.quicklinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    min-height: auto;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.quicklinks div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: auto;
+    background: linear-gradient(to left, #daa520, #e2c886, #daa520);
+    align-items: center;
+    padding: 0.3rem;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+.quicklinks div > a {
+    
+    color: black;
+    font-weight: 800;
+    align-self: center;
+    font-size: 0.8rem;
+}
+
+.quicklinks div:hover {
+    transform: translateX(10px);
+}
+
+.quicklinks div:hover a {
+    color: rgb(94, 2, 2);
+    transform: scale(1.1);
+    
+}
+
+.sociallinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    min-height: auto;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    gap: 0.5rem;
+}
+
+.sociallinks a {
+   color: #daa520;
+   font-size: 20px;
+   opacity: 0.9;
+}
+
+.sociallinks div > h3 {
+   opacity: 0.9; 
+   font-size: 1rem;
+}
+
+.sociallinks a:hover {
+   transform: scale(1.1);
+   color: white;
+    opacity: 0.9; 
+}
+
+
+footer p {
+    font-size: xx-small;
+}
+
+
+
