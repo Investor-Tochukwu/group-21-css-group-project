@@ -3,267 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- 
-    <link rel="stylesheet" href="/css/contact.css">
+    <title>Contact | Xperience Travels</title>
 
-    <!-- GOOGLE FONT MONTSERRAT-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contact.css">
 
-    <!-- GOOGLE FONT LATO -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100..900&display=swap">
 
-    <!-- FONT AWESOME CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
-    <!-- GOOGLE ICONS -->
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
-
-
-
-
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
+
 <body>
 
-     <header>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="../images/Xperience-travels-logo.png" alt="Xperience Travels logo">
+        </div>
 
-        <nav>
+        <ul class="desktopdisplay">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../html/destination.html">DESTINATION</a></li>
+            <li><a href="./packages.html">PACKAGES</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+        </ul>
 
-            <div class="logo">
-                <img src="/images/Xperience-travels-logo.png" alt="Xperience-Travels-logo">
-            </div>
+        <ul class="desktop-contact">
+            <li><a href="/html/contact.html">CONTACT</a></li>
+        </ul>
 
-            <ul class="desktopdisplay">
-                <li> <a href="./index.html">HOME</a></li>
-                <li> <a href="./destination.html">DESTINATION</a></li>
-                <li> <a href="#">PACKAGES </a></li>
-                <li> <a href="./about.html">ABOUT US</a></li>
+        <div class="mobiledisplay">
+            <button>
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+
+            <ul class="mobiledropdown">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./destination.html">DESTINATION</a></li>
+                <li><a href="#">PACKAGES</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+                <li><a href="/html/contact.html">CONTACT</a></li>
+                <li><a href="#">GET STARTED</a></li>
             </ul>
+        </div>
+    </nav>
+</header>
 
-            <ul class="desktop-contact">
-                 <li> <a href="/html/contact.html">CONTACT</a></li>
-            </ul>
+<main>
 
-            <div class="mobiledisplay">
+    <!-- HERO -->
+    <section class="hero">
+        <div class="contact-intro">
+            <h1>Plan your journey with us</h1>
+            <p>Ready for your next adventure? Let us make your travel dreams reality!</p>
+        </div>
+        <div class="overlay"></div>
+    </section>
 
-                <button><i class="fa-solid fa-bars-staggered"></i></button>
-            
-            
-                <ul class="mobiledropdown">
-                <li> <a href="./index.html">HOME</a></li>
-                <li> <a href="./destination.html">DESTINATION</a></li>
-                <li> <a href="#">PACKAGES </a></li>
-                <li> <a href="./about.html">ABOUT US</a></li>
-                <li> <a href="/html/contact.html">CONTACT</a></li>
-                <li> <a href="#">GET STARTED</a></li>
+    <!-- CONTACT FORM -->
+    <section class="contact">
+        <div class="contact-content">
+            <form>
 
-            </div>
+                <div>
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="First name">
+                </div>
 
-        </nav>
+                <div>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last name">
+                </div>
 
-    </header>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                </div>
 
-  <main>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                </div>
 
-
-     <section class="hero">
-
-         <div class="contact-intro">
-
-             <h1>Plan your journey with Us</h1>
-
-             <p>
-                    Ready for your next adventure? Let us make your travel dreams reality!
-              </p>
-            </div>
-
-            <div class="over-lay"></div>
-
-           </section>
-
-           <section class="contact">
-
-            <div class="contact-content">
-
-                <form>
-
-                    <div class="firstname">
-
-             <label for="firstname">FirstName</label>
-             <input type="text" name="firstname" id="firstname" placeholder="Firstname">
-
-             </div>
-
-                 <div class="lastame">
-
-             <label for="lastame">Lastname</label>
-             <input type="text" name="lastname" id="lastname" placeholder="Lastname">
-
-             </div>
- 
- 
-              <div class="phone">
-
-                <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Example@gmail.com">
-              </div>
-
-              <div class="phone">
-                <label for="phone">Phone</label>
-                <input type="tel" name="phone" id="phone" placeholder="Phone number">
-              </div>
-
-              <div>
-                   <select 
-                   name="framework" 
-                   id="framework">
-
-                   <option value="">Preferred destination</option>
-
-                    <option value="Dubai,UAE">Dubai,UAE</option>
-
-                    <option value="Paris,France">Paris,France</option>
-
-                    <option value="London,England">London,England</option>
-
-                    <option value="Bali,Indonesia">Bali,Indonesia</option>
-
-                    <option value="Tampines, Singapore">Tampines, Singapore</option>
-
-                    <option value="Tokyo,Japan">Tokyo, Japan</option>
-
-                   <option value="Las Vagas,United State">Las Vagas,United State</option>
-
-                   <option value="Rio de Janeiro, Brazil">Rio de Janeiro, Brazil </option>
-
-                   <option value="Zanzibar City, Tanzania">Zanzibar City, Tanzania</option>
-
-                   <option value="Calabar,Nigeria">Calabar,Nigeria</option>
-
-                   <option value="Cairo,Egypt">Cairo,Egypt</option>
-
-                    <option value="Cape Town,South Africa">Cape Town,South Africa</option>
-                
-                </select>
-
-              </div>
-
+                <div>
+                    <select name="destination">
+                        <option value="">Preferred Destination</option>
+                        <option>Dubai, UAE</option>
+                        <option>Paris, France</option>
+                        <option>London, England</option>
+                        <option>Bali, Indonesia</option>
+                        <option>Tokyo, Japan</option>
+                        <option>Cape Town, South Africa</option>
+                    </select>
+                </div>
 
                 <div>
                     <label for="date">Travel Date</label>
-                    <input type="date" name="date" id="date">
+                    <input type="date" id="date" name="date">
                 </div>
 
-                  <div>
-                   <select 
-                   name="framework" 
-                   id="framework">
-                   <option value="">Number of Travelers</option>
-
-                   <option value="1">1</option>
-
-                   <option value="2">2</option>
-
-                   <option value="3">3</option>
-
-                   <option value="4">4</option>
-
-                   <option value="5">5</option>
-
-                   <option value="more than 5">More than 5</option>
-
-                </select>
-              </div>
+                <div>
+                    <select name="travelers">
+                        <option value="">Number of Travelers</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                    </select>
+                </div>
 
                 <div>
-                   <select 
-                   name="framework" 
-                   id="framework">
-                   <option value="">Budget Range</option>
+                    <select name="budget">
+                        <option value="">Budget Range</option>
+                        <option>$5,000</option>
+                        <option>$10,000</option>
+                        <option>$20,000</option>
+                        <option>$50,000</option>
+                    </select>
+                </div>
 
-                   <option value="$5,000">$5,000</option>
+                <div>
+                    <label for="message">Special Requests</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
 
-                   <option value="$10,000">$10,000</option>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
 
-                   <option value="$15,000">$15,000</option>
-                   
-                   <option value="$20,000">$20,000</option>
+            </form>
+        </div>
+    </section>
 
-                   <option value="$25,000">$25,000</option>
-
-                   <option value="$30,000">$30,000</option>
-
-                   <option value="$50,000">$50,000</option>
-
-                   <option value="$100,000">$100,000</option>
-
-                </select>
-              </div>
-
-              <div>
-                <label for="messages">Special Requests</label>
-
-                <input type="textarea" name="messages" id="messages">
-              </div>
-             
-              <div>
-                <button>Submit</button>
-              </div>
-                </form>
-
-
-
-            </div>
-
-        </section>
-
-       <section>
-
+    <!-- CONTACT INFO -->
+    <section>
         <div class="contact-info">
-
-           <h2>Contact Information</h2>
-
-           <p>Suite A5,Shariff Plaza,Wuse 2, Abuja.</p>
-
+            <h2>Contact Information</h2>
+            <p>Suite A5, Shariff Plaza, Wuse 2, Abuja</p>
             <p>09043538373</p>
-
             <p>xperiencetravels@gmail.com</p>
-
         </div>
 
         <div class="social-links">
-
             <i class="fa-brands fa-facebook"></i>
-
             <i class="fa-solid fa-x"></i>
-
             <i class="fa-brands fa-tiktok"></i>
         </div>
-         
-       </section>
+    </section>
 
+</main>
 
-
-
-
-
-
-
-   
-       
-
-
-
-
-    
-     <footer>
+<footer>
 
         <div class="flogo">
-            <img src="/images/Xperience-travels-logo.png" alt="Xperience TRavels Logo">
+            <img src="../images/Xperience-travels-logo.png" alt="Xperience TRavels Logo">
         </div>
 
 
@@ -271,11 +170,9 @@
 
 
             <div class="quicklinks">
-                <div><a href="/html/index.html">Home</a></div>
-                <div><a href="/html/destination.html">Destinations</a></div>
-                <div><a href="/html/packages.html">Packages</a></div>
-                <div><a href="/html/about.html">About Us</a></div>
-
+                <div><a href="../index.html">Home</a></div>
+                <div><a href="../html/destination.html">Destinations</a></div>
+                <div><a href="../html/contact.html">Contact</a></div>
             </div>
 
 
@@ -302,9 +199,6 @@
 
         </div>
         
-   
-     </footer>
- </main>
-
+    </footer>
 </body>
 </html>

@@ -179,7 +179,7 @@ nav .logo {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    background-image: url(/images/A\ woman\ standing\ at\ a\ pond\ at\ tirta\ gangga\ water\ palace\ bali\ indonesia.webp);
+    background-image: url(../images/A\ woman\ standing\ at\ a\ pond\ at\ tirta\ gangga\ water\ palace\ bali\ indonesia.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -545,7 +545,7 @@ nav .logo {
     flex-direction: column;
     gap: 2rem;
     position: relative;
-    background-image: url(/images/asian-woman-wearing-japanese-traditional-kimono-temple-tokyo-japan.webp);
+    background-image: url(../images/asian-woman-wearing-japanese-traditional-kimono-temple-tokyo-japan.webp);
     background-size: cover;
     background-position: center;
 }
