@@ -202,19 +202,19 @@ nav .logo {
 }
 
 .package-tier-image-1 {
-    background-image: url(/images/budget\ package.png);
+    background-image: url(../images/budget\ package.png);
 }
 
 .package-tier-image-2 {
-    background-image: url(/images/standard\ package.png);
+    background-image: url(../images/standard\ package.png);
 }
 
 .package-tier-image-3 {
-    background-image: url(/images/premuim\ package.png);
+    background-image: url(../images/premuim\ package.png);
 }
 
 .package-tier-image-4 {
-    background-image: url(/images/luxury\ package.png);
+    background-image: url(../images/luxury\ package.png);
 }
 
 .package-tier > h3 {
