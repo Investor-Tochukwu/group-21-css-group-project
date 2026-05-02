@@ -178,6 +178,8 @@ nav .logo {
 .hero .overlay {
     position: absolute;
     width: 100%;
+    top: 0;
+    left: 0;
     height: 100%;
     inset: 0;
     z-index: 2;
