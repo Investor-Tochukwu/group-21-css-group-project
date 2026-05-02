@@ -167,7 +167,7 @@ nav .logo {
 
 .hero{
     width: 100%;
-    min-height: 80vh;
+    min-height: 70vh;
     margin-bottom: 1rem;
     background-image:url(../images/Rio\ de\ Janeiro.jpg) ;
     background-position: center;
@@ -205,11 +205,85 @@ nav .logo {
 .contact-intro h1{
  color: white;
  z-index: 100;
+ text-align: center;
+ 
 }
 .contact-intro p{
  font-size: 1.2rem;
  text-align: center;
  z-index: 100;
+}
+
+
+
+
+/* MAIN SECTION */
+.contact{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-top: 3.5rem;
+    gap: 2rem;
+    margin: 0 auto;
+
+}
+
+.contact h2{
+    font-weight: 900;
+    height: 0.89em;
+    overflow: hidden;
+    text-align: center;
+    color: #daa520;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact h2:hover {
+    font-weight: 900;
+    height: 1em;
+    overflow: hidden;
+    color: #daa520;
+}
+.contact-content{
+    background: #111;
+    /* margin: 0 auto; */
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+.contact-content div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    
+}
+
+.contact-content input{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+.contact-content select{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+}
+
+.contact-content label{
+    font-size: 1.1rem;
+    
 }
 
 
