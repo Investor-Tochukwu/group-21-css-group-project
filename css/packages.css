@@ -162,7 +162,7 @@ nav .logo {
 /* HERO */
 .hero{
     width: 100%;
-    min-height: calc(100vh - 4rem);
+    min-height: 80vh;
     background-image: url(../images/Abuja-city-FCT.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -189,9 +189,8 @@ nav .logo {
 .hero h1 {
     position: relative;
     z-index:100;
-   font-weight: 900;
     letter-spacing: 5px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .hero p{
